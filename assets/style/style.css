@@ -1,0 +1,121 @@
+@keyframes yourAnimation {
+    0.0%{
+        transition: .10s;
+    }
+    4.9%{
+        transform: translate(0px, 30px);
+    }
+}
+/* CSS RESET */
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #35364a;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* NAVE BAR */
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.cabecalho-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.cabecalho h1{
+    font-size: 2em;
+    font-family: 'dimitri bold';
+    text-shadow: 1px 1px 1px #ef863d, -1px 1px 1px #ef863d, 1px -1px 1px	#ef863d, -1px -1px 1px	#ef863d;
+    letter-spacing: 5px;
+}
+
+.cabecalho .cabecalho-text .cabecalho-img {
+    height:22px;
+    width: 22px;
+    margin-top: 10px;  
+}
+
+
+.cabecalho-img:hover{
+    cursor: pointer;
+    animation: yourAnimation 10s ease 0s  normal none;
+}
+
+.navegacao ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 8px;
+}
+.navegacao ul a{
+    font-family: 'dimitri bold';
+    color: black;
+    font-size: 1.9em;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #ef863d, -1px 1px 1px #ef863d, 1px -1px 1px	#ef863d, -1px -1px 1px	#ef863d;
+    transition: transform .3s;
+}
+
+.navegacao ul a li:hover{
+    transform: translateY(6px);
+    box-shadow: 1px 1px	#ef863d,
+    2px 2px #f49030,
+    3px 3px #3c3f4c;
+}
+
+
+/* h1{
+    font-family:'dimitri bold';
+
+    font-size: 3rem;
+} */
+
+/* MAIN */
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.main-text p{
+    font-family: 'Permanent Marker', cursive;
+    width: 500px;
+    color: #f49030;
+    font-size: 1.2em;
+    text-align:justify;
+    text-indent: 50px;
+}
+
+.main-text .paragrafo2{
+    color:#ef863d;
+}
+
+
+.saiba-mais{
+    width: 45%;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    padding: 15px 10px;
+    text-transform: uppercase;
+    font-family: 'dimitri normal';
+    font-weight: bold;
+    font-size: 1.8em;
+    background-color: #ef863d;
+}
+
+.saiba-mais:hover{
+    cursor: pointer;
+    font-size: 2em;
+}
